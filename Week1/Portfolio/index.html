@@ -1,70 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- HEADER -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am a web development student learning HTML, CSS and Git. This is my first portfolio website hosted on GitHub Pages.</p>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        
-        <div class="project-card">
-            <img src="images/project1.png" alt="Project Screenshot">
-            <p>This is my first HTML & CSS webpage. I designed it as part of my portfolio assignment.</p>
+        <div id="navtool">
+            <nav id="navbar">
+                <h1> Portfolio </h1>
+                <ul>
+                    <li> <a href="#about">About Me</a> </li>
+                    <li> <a href="#projects">My Projects</a> </li>
+                    <li> <a href="#contact">Contact Me </a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    <h1 class='name'>I'm Palchhin Manandhar.</h1>
+    <p style="color: white; text-align: center; font-family: 'Montserrat', sans-serif;"> Computer Science Student. </p>
+    <div class='main_div'>
 
-        <!-- Add more projects here -->
-    </section>
+        <img id="me" src="pal.png">
+        <hr class='divider'>
+        <div class="sec">
+            <section id="about">
+                <h2 class='head'> About Me </h2>
+                <hr class='line'>
+                <p>I am a passionate BSc. (Hons.) IT student with a solid academic foundation and a deep love for
+                    programming and software development. With experience in Python, HTML, CSS, JS and Java, having
+                    created a weather app and movie app. I am eager to learn, build innovative projects, and one day
+                    also create my own game. I seek to explore new challenges and hone my technical skills.</p>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+            </section>
 
-        <form>
-            <label>Name</label>
-            <input type="text" placeholder="Your Name" required>
+        </div>
+        <hr class='divider'>
+        <div class="sec">
+            <section id="projects">
+                <h2 class='head'> My Projects </h2>
+                <hr class='line'>
+                <p> Here are my projects: </p>
+                <br>
+                <img src='portfolio.png' class='portfolio'>
+                <div class='project_icon'>Project 1</div>
+                <p style="margin-top: 16px;">This is my very first HTML and CSS portfolio project. In this project, I
+                    learned how to structure a webpage using semantic HTML tags such as header, nav, section, and
+                    footer. I also designed the page using CSS, where I explored colors, fonts, spacing, borders, and
+                    layout techniques to create a soft, minimal, and pink aesthetic theme. I added a navigation bar, an
+                    "About Me" section, a contact form, and a simple footer. I also included a project screenshot to
+                    practice inserting images into a webpage. This project helped me understand the basics of web design
+                    and improve my confidence in building clean and responsive web pages..</p>
+                <br>
+                
+                
+            </section>
+        </div>
+        <hr class='divider'>
 
-            <label>Email</label>
-            <input type="email" placeholder="Your Email" required>
+        <div class="sec">
+            <section id="contact">
+                <h2 class='head'> Contact Me </h2>
+                <hr style="margin: 0 auto; width: 200px; margin-bottom: 10px;">
+                <form id='contact_form'>
+                    <label class="label"> Email: </label><br>
+                    <input class="input" type="text" placeholder="Enter your mail">
+                    <br>
+                    <label class="label"> Phone number:</label><br>
+                    <input class="input" type="number" placeholder="Enter your number">
+                    <br>
+                    <label class='label'> Message: </label><br>
+                    <textarea class='input' type='Message' placeholder='Write something...'></textarea>
+                </form>
+                <button> Send </button>
 
-            <label>Message</label>
-            <textarea placeholder="Your Message" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 Your Name. All rights reserved.</p>
-    </footer>
-
+            </section>
+        </div>
+    
+    	<footer>
+        	<p style="text-align: center; margin-bottom: 10px;">&copy; 2025 Rajin Maharjan - All Rights Reserved</p>
+		</footer>
+	</div>
 </body>
 </html>

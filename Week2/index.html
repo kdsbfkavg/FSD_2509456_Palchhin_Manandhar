@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='container'>
+        <video class='video' width='1800' height='800' autoplay muted loop id="bg-video">
+            <source src="pal.mp4" type="video/mp4">
+        </video>
+        <header>
+            <div id="navtool">
+                <nav id="navbar">
+                    <h1>Portfolio</h1>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu">☰</label>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">My Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+    </div>
+
+    <h1 class='name'>I'm Palchhin Manandhar.</h1>
+    <p style="color: white; text-align: center; font-family: 'Montserrat', sans-serif;"> Computer Science Student. </p>
+    <div class='main_div'>
+
+        <img id="me" src="pal.png">
+        <hr class='divider'>
+        <div class="sec">
+            <section id="about">
+                <h2 class='head'> About Me </h2>
+                <hr class='line'>
+                <p>I am a passionate BSc. (Hons.) IT student with a solid academic foundation and a deep love for
+                    programming and software development. With experience in Python, HTML, CSS, JS and Java, having
+                    created a weather app and movie app. I am eager to learn, build innovative projects, and one day
+                    also create my own game. I seek to explore new challenges and hone my technical skills.</p>
+
+            </section>
+
+        </div>
+        <hr class='divider'>
+        <div class="sec">
+            <section id="projects">
+                <h2 class='head'> My Projects </h2>
+                <hr class='line'>
+                <p> Here are my projects: </p>
+                <br>
+                <img src='portfolio.png' class='portfolio'>
+                <div class='project_icon'>Project 1</div>
+                <p style="margin-top: 16px;">This is my very first HTML and CSS portfolio project. In this project, I
+                    learned how to structure a webpage using semantic HTML tags such as header, nav, section, and
+                    footer. I also designed the page using CSS, where I explored colors, fonts, spacing, borders, and
+                    layout techniques to create a soft, minimal, and pink aesthetic theme. I added a navigation bar, an
+                    "About Me" section, a contact form, and a simple footer. I also included a project screenshot to
+                    practice inserting images into a webpage. This project helped me understand the basics of web design
+                    and improve my confidence in building clean and responsive web pages..</p>
+        </div>
+        <hr class='divider'>
+
+        <div class="sec">
+            <section id="contact">
+                <h2 class='head'> Contact Me </h2>
+                <hr style="margin: 0 auto; width: 200px; margin-bottom: 10px;">
+                <form id='contact_form'>
+                    <label class="label"> Email: </label><br>
+                    <input class="input" id="input_mail" type="email" placeholder="Enter your mail">
+                    <br>
+                    <p class='message'></p>
+                    <label class="label"> Phone number:</label><br>
+                    <input class="input" id='input_number' type="number" placeholder="Enter your number">
+                    <br>
+                    <p class='message'></p><label class='label'> Message: </label><br>
+                    <textarea class='input' id='input_message' type='Message'
+                        placeholder='Write something...'></textarea>
+                    <p class='message'> </p>
+                    <p id="msg_sent"></p>
+                    <button> Send </button>
+                </form>
+
+
+            </section>
+        </div>
+        <footer>
+            <p style="text-align: center; margin-bottom: 10px;">&copy; 2025 Rajin Maharjan - All Rights Reserved</p>
+        </footer>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>

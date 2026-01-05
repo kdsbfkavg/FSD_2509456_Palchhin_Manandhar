@@ -1,0 +1,34 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "Inception",
+      "genre": "Sci-Fi",
+      "year": 2010
+    },
+    {
+      "id": "2",
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "genre": "Crime"
+    },
+    {
+      "id": "3",
+      "title": "Dune",
+      "genre": "Sci-FI",
+      "year": 2021
+    },
+    {
+      "id": "4",
+      "title": "mero mutu",
+      "genre": "Romance",
+      "year": 2026
+    },
+    {
+      "id": "5",
+      "title": "timi mero kanxa",
+      "genre": "comedy",
+      "year": 2022
+    }
+  ]
+}

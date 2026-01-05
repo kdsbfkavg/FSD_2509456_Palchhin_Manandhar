@@ -1,122 +1,162 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-/* BASE LAYOUT */
-body {
-    background: #fafafa;
-    color: #222;
-    line-height: 1.6;
-    padding: 0 20px;
+body{
+	background-color: black;
 }
 
-/* HEADER */
-header {
-    background: #3f51b5;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 6px 12px;
-    transition: 0.3s;
-}
-
-header nav ul li a:hover {
-    background: white;
-    color: #3f51b5;
-    border-radius: 6px;
-}
-
-/* SECTIONS */
-section {
-    padding: 40px 0;
-}
-
-h2 {
-    margin-bottom: 20px;
-    border-left: 4px solid #3f51b5;
-    padding-left: 10px;
-}
-
-/* PROJECT CARD */
-.project-card {
-    border: 1px solid #ddd;
+#navtool {
+    background-color: grey;
+    height: 80px;
     padding: 15px;
-    max-width: 400px;
-    box-shadow: 0 0 10px #ccc;
-    border-radius: 10px;
-    transition: 0.3s;
 }
 
-.project-card:hover {
-    transform: scale(1.03);
-}
-
-.project-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-/* FORM */
-form {
-    max-width: 400px;
+#navbar {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: space-between; 
+    align-items: center;
+    height: 100%;
 }
 
-form input,
-form textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+#navbar h1 {
+    color: black;
+    font-size: 24px;
+    margin: 0;
 }
 
-form button {
-    background: #3f51b5;
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 0; 
+    padding: 0; 
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 8px 12px;
+    border-radius: 4px; 
+}
+
+#navbar a:hover {
+	background-color: black;
     color: white;
-    border: none;
-    padding: 12px;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: 0.3s;
+}
+.name{
+	text-align: center !important;
+	font-size: 64px !important;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	color: white;
+	margin: 10px;
+	line-height: 1.5;
 }
 
-form button:hover {
-    background: #1e2f7b;
+.main_div{
+	color: #757575 !important;
+	font-family: "Montserrat", sans-serif;
+	text-align: justify !important;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #eee;
-    margin-top: 40px;
+.head{
+	color: #F1F1F1;
+	margin: 10px;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 10px 0;
+	padding: 16px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    body {
-        padding: 0 10px;
-    }
-    header nav ul {
-        flex-direction: column;
-    }
+.divider{
+	border: none;
+	display: none;
+	background-color: whitesmoke;
+	height: 1px;
+}
+
+.line{
+	display: block;
+    color: gray;
+    unicode-bidi: isolate;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#me{
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	height: 500px;
+	border: 3px solid white;
+	border-radius: 8px;
+}
+
+.sec{
+	margin-bottom: 10px;
+	padding:16px;
+	line-height: 1.5;
+}
+
+#contact{
+	text-align: center;
+}
+
+#contatc_form{
+	align-items: center;
+}
+
+textarea{
+	height: 150px;
+}
+
+#image{
+	height: 100px;
+}
+
+.label{
+	font-size: 20px;
+}
+
+.input{
+	width: 800px;
+	border-radius: 10px;
+	padding: 10px;
+
+}
+button{
+	padding: 5px;
+	margin-top: 10px;
+	border-radius: 15px;
+	background-color: white;
+	width: 50px;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.project_icon {
+	text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  
+}
+
+.portfolio{
+	display: flex;
+	width: 500px;
+	height: 300px;
+	border: 3px solid white;
+	border-radius: 8px;
+	margin: 0 auto;
 }

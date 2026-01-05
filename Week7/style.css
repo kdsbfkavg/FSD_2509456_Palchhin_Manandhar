@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef;
+}
+
+.card {
+    width: 350px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 6px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #ddd;
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
